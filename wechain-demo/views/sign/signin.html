@@ -1,0 +1,45 @@
+{{> header}}
+<div class="main">
+    {{> sign/sidebar }}
+    <div class='content'>
+      <div class='panel'>
+        <div class='header'>
+          <ul class='breadcrumb'>
+            <li>
+                <a href='/'>Home</a>
+                <span class='divider'>/</span>
+            </li>
+            <li class='active'>Login</li>
+          </ul>
+        </div>
+        <div class='inner'>
+            <div class="login-main">
+                <form action="/signin" method="post" class="login-form" id="login-from">
+                    {{#if error}}
+                        <div class="msg error">
+                            {{error}}
+                        </div>
+                    {{/if}}
+                    {{#if sucess}}
+                        <div class="msg sucess">{{sucess}}</div>
+                    {{/if}}
+                    <div class="form-group">
+                        <label for="loginname">Username</label>
+                        <input type="text" id="loginname" name="loginname">
+                    </div>
+                    <div class="form-group">
+                        <label for="pass" class=" ">Password</label>
+                        <input type="password" id="pass" name="pass">
+                    </div>
+                    <div class="form-actions">
+                        <input type="submit" class="btn btn-primary" value="Login">
+                        <input type="reset" class="btn btn-info" value="Reset">
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+      </div>
+    </div>
+</div>

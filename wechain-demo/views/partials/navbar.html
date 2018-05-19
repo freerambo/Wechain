@@ -1,0 +1,37 @@
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="container">
+            <a href="/" class="navbar-brand">
+                <img src="{{config.site_logo}}" alt="">
+            </a>
+            <form action="" id="search-form" class="navbar-search">
+                <input type="text" class="search-query">
+            </form>
+
+            <ul class="nav navbar-nav fr">
+                <li>
+                    <a  href="/" class='nav-link'>Home</a>
+                </li>
+                {{#if current_user }}
+                    <li>
+                        <a  href="/topic/create" class='nav-link'>Create Content</a>
+                    </li>
+                    <li>
+                        <a  href="/signout" class='nav-link'>Logout</a>
+                    </li>
+                {{else }}
+                    <li>
+                        <a  href="/topic/list" class='nav-link'>Discovery</a>
+                    </li>
+                    <li>
+                        <a  href="/signup" class='nav-link'>About</a>
+                    </li>43
+                    <li>
+                        <a  href="/signin" class='nav-link'>Help&Support</a>
+                    </li>
+                {{/if}}
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>

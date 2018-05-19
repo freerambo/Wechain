@@ -1,0 +1,40 @@
+$gray1: #e1e1e1;
+$gray2: #f6f6f6;
+$node_green: #80bd01;
+$node_black: #444444;
+
+$blue1:#4a90e2;
+body {
+    margin: 0 auto;
+    background-color: $gray1;
+    font-family: "Helvetica Neue", "Hiragino Sans GB", STHeiti, sans-serif !important;
+    font-size: 13px;
+    color: #333;
+}
+
+//引入有compass生成的reset样式
+// 一般是使用 normalize.css
+// @import "sass/reset";
+
+//引入基本样式base.scss
+@import 'sass/base';
+.fl {
+    float: left;
+}
+@import 'sass/navbar';
+
+// 导航下面的主题部分样式：
+@import 'sass/main.scss';
+// 用户登录 注册样式
+@import 'sass/sign.scss';
+
+// 话题相关样式
+@import 'sass/topic';
+
+// 网站底部样式
+@import 'sass/footer';
+
+main{
+    color: #fff;
+    font-size: 14px;
+}

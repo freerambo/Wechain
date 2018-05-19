@@ -1,0 +1,7 @@
+# Ignore Mac OS desktop services store
+.DS_Store
+
+node_modules
+.sass-cache
+*.css.map
+public/upload

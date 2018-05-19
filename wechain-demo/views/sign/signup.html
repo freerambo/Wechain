@@ -1,0 +1,54 @@
+{{> header}}
+<div class="main">
+    {{> sign/sidebar }}
+    <div class="content">
+        <div class="panel">
+            <div class="header">
+                <ul class="breadcrumb">
+                    <li class='breadcrumb-item'>
+                        <a href="">Home</a>
+                        <span class='divider'>/</span>
+                    </li>
+                    <li class='breadcrumb-item active '>
+                        Register
+                    </li>
+                </ul>
+
+            </div>
+            <div class="inner">
+                <div class="reg-main">
+                    <form action="/signup" method="post" class="reg-form" id="reg-from">
+                        {{#if error}}
+                            <div class="msg error">
+                                {{error}}
+                            </div>
+                        {{/if}}
+                        {{#if sucess}}
+                            <div class="msg sucess">{{sucess}}</div>
+                        {{/if}}
+                        <div class="form-group">
+                            <label for="loginname">Username</label>
+                            <input type="text" id="loginname" name="loginname">
+                        </div>
+                        <div class="form-group">
+                            <label for="pass" class=" ">Password</label>
+                            <input type="password" id="pass" name="pass">
+                        </div>
+                        <div class="form-group">
+                            <label for="re_pass" class=" ">Confirm</label>
+                            <input type="password" id="re_pass" name="re_pass">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class=" ">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form-actions">
+                            <input type="submit" class="btn btn-primary" value="Submit">
+                            <input type="reset" class="btn btn-info" value="Reset">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
