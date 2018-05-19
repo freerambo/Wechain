@@ -12,23 +12,25 @@
                 <li>
                     <a  href="/" class='nav-link'>Home</a>
                 </li>
+
+
+
+                <li>
+                    <a  href="/topic/list" class='nav-link'>Discovery</a>
+                </li>
+
+                <li>
+                    <a  href="/topic/create" class='nav-link'>Create Centent</a>
+                </li>43
+                <li>
+                    <a  href="/signin" class='nav-link'>Help&Support</a>
+                </li>
+
                 {{#if current_user }}
-                    <li>
-                        <a  href="/topic/create" class='nav-link'>Create Content</a>
-                    </li>
-                    <li>
-                        <a  href="/signout" class='nav-link'>Logout</a>
-                    </li>
+                <li>
+                    <a  href="/signout" class='nav-link'>Logout</a>
+                </li>
                 {{else }}
-                    <li>
-                        <a  href="/topic/list" class='nav-link'>Discovery</a>
-                    </li>
-                    <li>
-                        <a  href="/signup" class='nav-link'>About</a>
-                    </li>43
-                    <li>
-                        <a  href="/signin" class='nav-link'>Help&Support</a>
-                    </li>
                 {{/if}}
             </ul>
         </div>
