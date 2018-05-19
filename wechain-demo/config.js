@@ -8,7 +8,7 @@ var config = {
     // 储存session的redis db 信息
     redis_db: {
         prot: 6379, //默认的redis端口
-        host: '127.0.0.1',
+        host: '10.0.1.71',
         db: 'bbs_demo',
         pass: ''
     },
