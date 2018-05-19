@@ -130,8 +130,8 @@
         <option value="$PROJECT_DIR$/views/sign/signin.html" />
         <option value="$PROJECT_DIR$/views/sign/signup.html" />
         <option value="$PROJECT_DIR$/views/partials/footer.html" />
-        <option value="$PROJECT_DIR$/views/index.html" />
         <option value="$PROJECT_DIR$/views/partials/navbar.html" />
+        <option value="$PROJECT_DIR$/views/index.html" />
       </list>
     </option>
   </component>
@@ -243,12 +243,12 @@
       <option name="presentableId" value="Default" />
       <updated>1526653014825</updated>
       <workItem from="1526653021485" duration="5003000" />
-      <workItem from="1526708169313" duration="443000" />
+      <workItem from="1526708169313" duration="535000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5446000" />
+    <option name="totallyTimeSpent" value="5538000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
