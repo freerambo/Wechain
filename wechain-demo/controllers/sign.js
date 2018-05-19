@@ -78,7 +78,8 @@ exports.signin = (req,res) => {
             res.render('sign/signin','获取用户信息出错！')
         }else{
             if(user){
-                req.session.user = user;
+                se = req.session;
+                se.user = user;
                 // res.render('sign/signin',{sucess: '登陆成功！'});
                 // app.locals.current_user 只能在模版中用，这里无current_user值的。
                 // 由于session中的current_user中间件要get请求一次后，才能赋值。
