@@ -31,6 +31,10 @@ router.post('/topic/create',topic.topicCreate);
 // 显示话题 列表页面
 router.get('/topic/list',topic.showTopicList);
 
+
+router.get('/about',topic.showTopicList);
+
+
 // http://localhost:3001/topic/57beefce861ceef44421fd56
 // 显示话题详情页面
 router.get('/topic/:tid',topic.showDetail);

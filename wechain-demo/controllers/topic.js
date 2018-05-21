@@ -53,7 +53,7 @@ exports.topicCreate = function(req, res){
     });
     if(hasEmptyInfo){
         res.status(422);
-        res.render('topic/create',{error: '您填写的信息不完整'});
+        res.render('topic/create',{error: 'Incompleted user input'});
         return;
     }
     var topicData = {
@@ -65,7 +65,7 @@ exports.topicCreate = function(req, res){
     };
     console.log(topicData);
     TopicModel.addTopic(topicData, function(err,data){
-        res.render('topic/create', {sucess: '创建话题《' + title + '》成功:'});
+        res.render('topic/create', {sucess: 'Create 《' + title + '》successfully:'});
     })
 
 };

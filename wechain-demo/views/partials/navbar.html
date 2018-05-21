@@ -8,7 +8,7 @@
                 <input type="text" class="search-query">
             </form>
 
-            <ul class="nav navbar-nav fr">
+            <ul class="wcnav wcnavbar-nav fr">
                 <li>
                     <a  href="/" class='nav-link'>Home</a>
                 </li>
@@ -17,17 +17,21 @@
                 </li>
 
                 <li>
-                    <a  href="/topic/create" class='nav-link'>Create Centent</a>
+                    <a  href="/topic/create" class='nav-link'>Create Content</a>
                 </li>43
                 <li>
-                    <a  href="/" class='nav-link'>Help&Support</a>
+                    <a  href="/about" class='nav-link'>Help&Support</a>
                 </li>
 
                 {{#if current_user }}
-                <li>
-                    <a  href="/signout" class='nav-link'>Logout</a>
-                </li>
+                    <li>
+                        <a  href="/signout" class='nav-link'>Logout</a>
+                    </li>
                 {{else }}
+
+                    <li>
+                        <a  href="/signup" class='nav-link'>Signup</a>
+                    </li>
                 {{/if}}
             </ul>
         </div>

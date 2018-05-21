@@ -87,13 +87,13 @@ app.use(session({
 }));
 
 //mongoose 链接数据库
-mongoose.connect("mongodb://10.0.1.71:27017/bbs_demo");
+mongoose.connect("mongodb://127.0.0.1:27017/bbs_demo");
 //  开始使用中间件，中间件需要在路由使用前使用。
 // session.user中间件
-// app.use(function(req,res,next){
-//     app.locals.current_user = req.session.user;
-//     next();
-// });
+app.use(function(req,res,next){
+    app.locals.current_user = req.session.user;
+    next();
+});
 
 
 //
@@ -103,11 +103,11 @@ app.use('/',webRouter);
 // app.use('/user',userRouter)
 
 // 捕获404错误
-app.use((req, res, next) => {
+/*app.use((req, res, next) => {
   var err = new Error('Not Found');
   err.status = 404;
   next(err);
-});
+});*/
 
 
 
@@ -143,3 +143,5 @@ app.use(function(err, req, res, next) {
 app.listen(3005,function(){
     console.log('http://localhost:3005/');
 })
+
+

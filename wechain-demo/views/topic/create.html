@@ -45,7 +45,10 @@
                                 <br>
                                 <div class="editor-buttons">
                                     <input type="submit" class='btn btn-primary' value='Submit'>
+                                    <input type="button" class='btn btn-default btn-create' id="createTopic"  onclick="createPublication()" value='Push'>
+
                                 </div>
+
                             </div>
 
                         </div>
@@ -81,6 +84,18 @@
             });
 
     });
+
+   function createPublication(){
+       var val = $("#title").val();
+       console.log(val);
+       if(!val){alert("title can not be null")}
+        else  {
+           App.createPublication(val);
+           // $("#createTopic").disable();
+
+       }
+   }
+
 
 </script>
 

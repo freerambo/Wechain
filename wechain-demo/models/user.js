@@ -24,7 +24,7 @@ UserSchema.statics.getUserBySignupInfo = function( name,email,callback){
 
 // 根据登陆信息获取User
 UserSchema.statics.getUser = function( name, pass, callback){
-    this.findOne({ name:  name, pass: pass}, callback);
+    this.findOne({ name:  name/*, pass: pass*/}, callback);
 }
 
 //创建user模型
